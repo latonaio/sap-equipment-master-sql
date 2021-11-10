@@ -1,4 +1,4 @@
-CREATE TABLE `equipment-master`
+CREATE TABLE `sap-equipment-master`
 (
     `Equipment`             varchar(18) DEFAULT NULL,
     `ValidityEndDate`       date DEFAULT NULL,

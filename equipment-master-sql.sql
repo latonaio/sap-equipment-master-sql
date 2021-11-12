@@ -53,6 +53,6 @@ CREATE TABLE `sap-equipment-master`
     `CreationDate`          date DEFAULT NULL,
     `LastChangeDateTime`    datetime DEFAULT NULL,
     `EquipmentIsMarkedForDeletion` varchar(1) DEFAULT NULL,
-    PRIMARY KEY (`Equipment`),
+    PRIMARY KEY (`Equipment`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

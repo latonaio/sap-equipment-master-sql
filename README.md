@@ -13,8 +13,8 @@ https://api.sap.com/api/OP_API_EQUIPMENT/overview
 
 sap-equipment-master-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
-* equipment-master-sql.sql  
-* equipment-master-sql-business-partner-data.sql  
+* sap-equipment-master-sql.sql（SAP 設備マスタ）  
+* sap-equipment-master-sql-business-partner-data.sql（SAP 設備マスタ - ビジネスパートナ-データ）  
 
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法

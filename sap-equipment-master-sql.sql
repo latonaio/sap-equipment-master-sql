@@ -49,7 +49,7 @@ CREATE TABLE `sap-equipment-master`
     `EquipmentIsAvailable`  tinyint(1) DEFAULT NULL,
     `EquipmentIsInstalled`  tinyint(1) DEFAULT NULL,
     `EquipIsAllocToSuperiorEquip` tinyint(1) DEFAULT NULL,
-    `EquipHasSubOrdinateEquipment` tinyint(1) DEFAULT NULL,
+    `EquipHasSubOrdinateEquipment` varchar(1) DEFAULT NULL,
     `CreationDate`          date DEFAULT NULL,
     `LastChangeDateTime`    datetime DEFAULT NULL,
     `EquipmentIsMarkedForDeletion` tinyint(1) DEFAULT NULL,

@@ -1,6 +1,6 @@
 CREATE TABLE `sap-equipment-master`
 (
-    `Equipment`             varchar(18) DEFAULT NULL,
+    `Equipment`             varchar(18) NOT NULL,
     `ValidityEndDate`       date DEFAULT NULL,
     `ValidityEndTime`       time DEFAULT NULL,
     `ValidityStartDate`     date DEFAULT NULL,

@@ -1,9 +1,9 @@
-CREATE TABLE `sap-equipment-master`
+CREATE TABLE `sap_equipment_master`
 (
     `Equipment`             varchar(18) NOT NULL,
-    `ValidityEndDate`       date DEFAULT NULL,
-    `ValidityEndTime`       time DEFAULT NULL,
-    `ValidityStartDate`     date DEFAULT NULL,
+    `ValidityEndDate`       varchar(80) DEFAULT NULL,
+    `ValidityEndTime`       varchar(80) DEFAULT NULL,
+    `ValidityStartDate`     varchar(80) DEFAULT NULL,
     `EquipmentName`         varchar(40) DEFAULT NULL,
     `EquipmentCategory`     varchar(1) DEFAULT NULL,
     `TechnicalObjectType`   varchar(10) DEFAULT NULL,
@@ -11,10 +11,10 @@ CREATE TABLE `sap-equipment-master`
     `GrossWeightUnit`       varchar(3) DEFAULT NULL,
     `SizeOrDimensionText`   varchar(18) DEFAULT NULL,
     `InventoryNumber`       varchar(25) DEFAULT NULL,
-    `OperationStartDate`    date DEFAULT NULL,
+    `OperationStartDate`    varchar(80) DEFAULT NULL,
     `AcquisitionValue`      varchar(11) DEFAULT NULL,
     `Currency`              varchar(5) DEFAULT NULL,
-    `AcquisitionDate`       date DEFAULT NULL,
+    `AcquisitionDate`       varchar(80) DEFAULT NULL,
     `AssetManufacturerName` varchar(30) DEFAULT NULL,
     `ManufacturerPartTypeName` varchar(20) DEFAULT NULL,
     `ManufacturerCountry`   varchar(3) DEFAULT NULL,
@@ -50,8 +50,8 @@ CREATE TABLE `sap-equipment-master`
     `EquipmentIsInstalled`  tinyint(1) DEFAULT NULL,
     `EquipIsAllocToSuperiorEquip` tinyint(1) DEFAULT NULL,
     `EquipHasSubOrdinateEquipment` varchar(1) DEFAULT NULL,
-    `CreationDate`          date DEFAULT NULL,
-    `LastChangeDateTime`    datetime DEFAULT NULL,
+    `CreationDate`          varchar(80) DEFAULT NULL,
+    `LastChangeDateTime`    varchar(80) DEFAULT NULL,
     `EquipmentIsMarkedForDeletion` tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`Equipment`)
 ) ENGINE = InnoDB

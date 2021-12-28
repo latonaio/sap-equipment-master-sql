@@ -6,6 +6,6 @@ CREATE TABLE `sap_equipment_master_business_partner_data`
     `Partner`               varchar(12) DEFAULT NULL,
     `CreationDate`          varchar(80) DEFAULT NULL,
     PRIMARY KEY (`Equipment`, `PartnerFunction`, `EquipmentPartnerObjectNmbr`),
-    CONSTRAINT `SAPEquipmentMasterBusinessPartnerData_fk` FOREIGN KEY (`Equipment`) REFERENCES `sap_equipment_master` (`Equipment`)
+    CONSTRAINT `SAPEquipmentMasterBusinessPartnerData_fk` FOREIGN KEY (`Equipment`) REFERENCES `sap_equipment_master_equipment_data` (`Equipment`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
